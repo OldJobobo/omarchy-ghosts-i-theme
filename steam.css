@@ -54,12 +54,12 @@
 	/* Split pane views */
     --adw-sidebar-bg-rgb: 27, 15, 12 !important;
     --adw-sidebar-fg-rgb: 216, 200, 180 !important;
-    --adw-sidebar-backdrop-rgb: 27, 15, 12 !important;
+    --adw-sidebar-backdrop-rgb: 122, 106, 95 !important;
     --adw-sidebar-shade-rgb: 0, 0, 0 !important;
     --adw-sidebar-shade-a: 0.36 !important;
     --adw-secondary-sidebar-bg-rgb: 27, 15, 12 !important;
     --adw-secondary-sidebar-fg-rgb: 216, 200, 180 !important;
-    --adw-secondary-sidebar-backdrop-rgb: 27, 15, 12 !important;
+    --adw-secondary-sidebar-backdrop-rgb: 122, 106, 95 !important;
     --adw-secondary-sidebar-shade-rgb: 0, 0, 0 !important;
     --adw-secondary-sidebar-shade-a: 0.36 !important;
 
