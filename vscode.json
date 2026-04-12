@@ -1,4 +1,5 @@
 {
   "name": "Ghosts I",
-  "extension": "oldjobobo.ghosts-i-theme"
+  "extension": "oldjobobo.ghosts-i-theme",
+  "_marketplace": "https://marketplace.visualstudio.com/items?itemName=oldjobobo.ghosts-i-theme"
 }

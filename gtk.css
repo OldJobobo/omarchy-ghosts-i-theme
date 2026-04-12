@@ -75,7 +75,7 @@
 @define-color dialog_bg_color @background;
 @define-color dialog_fg_color @foreground;
 
-@define-color borders alpha(@foreground, 0.1);
+@define-color borders alpha(@bright_blue, 0.38);
 
 /* GTK3 Adwaita Legacy Color Variables */
 @define-color theme_fg_color @foreground;
@@ -94,7 +94,7 @@
 @define-color theme_unfocused_selected_bg_color @yellow;
 @define-color theme_unfocused_selected_fg_color @background;
 @define-color unfocused_insensitive_color @bright_black;
-@define-color unfocused_borders alpha(@foreground, 0.1);
+@define-color unfocused_borders alpha(@blue, 0.55);
 @define-color warning_color @yellow;
 @define-color error_color @red;
 @define-color success_color @green;
@@ -127,7 +127,7 @@ messagedialog .secondary-text {
 messagedialog button {
     background-color: @black;
     color: @foreground;
-    border: 1px solid @bright_black;
+    border: 1px solid @bright_blue;
     padding: 10px;
 }
 
@@ -161,7 +161,7 @@ alertdialog label {
 }
 
 filechooser .dialog-action-box {
-    border-top: 1px solid @bright_black;
+    border-top: 1px solid @bright_blue;
 }
 
 filechooser .dialog-action-box:backdrop {
@@ -169,7 +169,7 @@ filechooser .dialog-action-box:backdrop {
 }
 
 filechooser #pathbarbox {
-    border-bottom: 1px solid @bright_black;
+    border-bottom: 1px solid @bright_blue;
 }
 
 filechooserbutton:drop(active) {

@@ -73,7 +73,7 @@
 @define-color headerbar_fg_color @foreground;
 @define-color headerbar_backdrop_color @background;
 @define-color headerbar_shade_color @background;
-@define-color headerbar_border_color alpha(@foreground, 0.15);
+@define-color headerbar_border_color alpha(@color12, 0.42);
 
 @define-color card_bg_color alpha(@foreground, 0.03);
 @define-color card_fg_color @foreground;
@@ -103,7 +103,7 @@
 @define-color error_bg_color @color1;
 @define-color error_fg_color @color15;
 
-@define-color borders alpha(@foreground, 0.15);
+@define-color borders alpha(@color12, 0.42);
 
 /* Additional bg/fg color variables */
 @define-color window_backdrop_color @background;
@@ -120,11 +120,11 @@
 
 @define-color tooltip_bg_color @background;
 @define-color tooltip_fg_color @foreground;
-@define-color tooltip_border_color alpha(@foreground, 0.15);
+@define-color tooltip_border_color alpha(@color12, 0.42);
 
 @define-color osd_bg_color @background;
 @define-color osd_fg_color @foreground;
-@define-color osd_border_color alpha(@foreground, 0.15);
+@define-color osd_border_color alpha(@color12, 0.42);
 
 @define-color filechooser_bg_color @background;
 @define-color filechooser_fg_color @foreground;

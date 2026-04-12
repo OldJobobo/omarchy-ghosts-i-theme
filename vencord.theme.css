@@ -64,13 +64,16 @@
     --item-mention-foreground: var(--item-text-contrast);
     --item-mention-text: var(--item-text-contrast);
 
-    --item-border: color-mix(in srgb, var(--item-surface-3) 60%, transparent);
+    --item-border: transparent;
     --item-accent-dim: color-mix(in srgb, var(--item-accent) 30%, var(--item-surface-1));
     --radius-sm: 0px;
     --radius-md: 0px;
     --radius-lg: 0px;
 
     --eh-gap: 12px;
+    --eh-row-height: 32px;
+    --eh-toolbar-height: 34px;
+    --eh-composer-height: 44px;
     --eh-letter-spacing: 0.35px;
     --font-primary: "gg sans", sans-serif;
     --font-display: "gg sans", sans-serif;
@@ -184,9 +187,7 @@ body {
 
 a[data-list-item-id^="channels___"][aria-selected="true"] {
     background-color: var(--background-modifier-selected) !important;
-    box-shadow:
-        inset 3px 0 0 0 var(--item-accent),
-        inset 0 0 0 1px color-mix(in srgb, var(--item-accent) 18%, transparent) !important;
+    box-shadow: inset 3px 0 0 0 var(--item-accent) !important;
     border-radius: var(--radius-sm) !important;
 }
 
@@ -200,7 +201,24 @@ a[data-list-item-id^="channels___"] [class*="link"],
 li[class*="containerDefault"] [class*="link"] {
     background: transparent !important;
     box-shadow: none !important;
-    border: none !important;
+    min-height: var(--eh-row-height) !important;
+}
+
+a[data-list-item-id^="channels___"] [class*="linkTop"],
+a[data-list-item-id^="channels___"] [class*="content__"],
+a[data-list-item-id^="channels___"] [class*="name__"],
+a[data-list-item-id^="channels___"] [class*="iconContainer__"] {
+    display: flex !important;
+    align-items: center !important;
+}
+
+a[data-list-item-id^="channels___"] [class*="linkTop"],
+a[data-list-item-id^="channels___"] [class*="content__"] {
+    gap: 6px !important;
+}
+
+a[data-list-item-id^="channels___"] [class*="iconContainer__"] {
+    flex: 0 0 auto !important;
 }
 
 a[data-list-item-id^="channels___"] svg,
@@ -233,14 +251,14 @@ li[class*="containerDefault"][class*="modeUnread"] [class*="name"] *,
     color: var(--item-channel-name-selected) !important;
 }
 
-[class*="channelTextArea"]:focus-within {
-    box-shadow: 0 0 0 1px var(--item-accent) inset !important;
-    border-color: var(--item-accent) !important;
+[class*="chatContent"] [class*="form"]:focus-within {
+    border-color: transparent !important;
+    box-shadow: none !important;
 }
 
 [class*="channelTextArea"]:focus-within [class*="scrollableContainer"] {
-    box-shadow: none !important;
-    border-color: inherit !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--item-accent) 32%, transparent) !important;
+    border-color: transparent !important;
 }
 
 [class*="textAreaForPostCreation"] {
@@ -294,31 +312,58 @@ li[class*="replying"]:hover {
     border-radius: var(--radius-md) !important;
 }
 
+[class*="sidebar"] [class*="sidebarList"],
 [class*="sidebar"],
 [class*="chatContent"],
 [class*="contentRegion"],
 [class*="membersWrap"] {
     background: var(--item-surface-1) !important;
+    border: none !important;
     border-radius: var(--radius-lg) !important;
 }
 
 [class*="sidebar"] {
-    border-right: 1px solid color-mix(in srgb, var(--item-surface-3) 38%, transparent) !important;
+    margin: 0 var(--eh-gap) var(--eh-gap) var(--eh-gap) !important;
+}
+
+[class*="chatContent"],
+[class*="contentRegion"],
+[class*="membersWrap"] {
+    margin: 0 var(--eh-gap) var(--eh-gap) 0 !important;
+    overflow: hidden !important;
 }
 
 [class*="membersWrap"],
 [class*="panels"] {
     background: var(--item-surface-1) !important;
-    border-left: 1px solid color-mix(in srgb, var(--item-surface-3) 38%, transparent) !important;
+    border-left: none !important;
     border-radius: var(--radius-lg) !important;
+}
+
+[class*="panels"] {
+    padding: 6px 8px !important;
 }
 
 [class*="chatContent"] [class*="scrollableContainer"],
 [class*="container"] [class*="searchBar"] {
     background: var(--item-surface-2) !important;
-    border: 1px solid color-mix(in srgb, var(--item-surface-3) 42%, transparent) !important;
+    border: none !important;
     box-shadow: none !important;
     border-radius: var(--radius-md) !important;
+}
+
+[class*="chatContent"] [class*="scrollableContainer"] {
+    min-height: var(--eh-composer-height) !important;
+    padding: 3px 6px !important;
+    background-clip: border-box !important;
+    overflow: hidden !important;
+}
+
+[class*="container"] [class*="searchBar"] {
+    min-height: var(--eh-toolbar-height) !important;
+    padding: 0 10px !important;
+    display: flex !important;
+    align-items: center !important;
 }
 
 [class*="chatContent"] [class*="form"],
@@ -328,8 +373,53 @@ li[class*="replying"]:hover {
     box-shadow: none !important;
 }
 
+[class*="chatContent"] [class*="channelBottomBarArea"],
+[class*="chatContent"] [class*="themedBackground"] {
+    background: var(--item-surface-2) !important;
+    border: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    border-radius: var(--radius-md) !important;
+    overflow: hidden !important;
+}
+
+[class*="chatContent"] [class*="channelBottomBarArea"]::before,
+[class*="chatContent"] [class*="channelBottomBarArea"]::after,
+[class*="chatContent"] [class*="themedBackground"]::before,
+[class*="chatContent"] [class*="themedBackground"]::after {
+    content: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+[class*="chatContent"] [class*="form"]:has([class*="stackedBars"]),
+[class*="chatContent"] [class*="form"]:has([class*="attachedBars"]),
+[class*="chatContent"] [class*="form"]:has([class*="replyBar"]) {
+    background: var(--item-surface-2) !important;
+    border: none !important;
+    border-radius: var(--radius-md) !important;
+}
+
+[class*="chatContent"] [class*="form"]:has([class*="stackedBars"]) [class*="scrollableContainer"],
+[class*="chatContent"] [class*="form"]:has([class*="attachedBars"]) [class*="scrollableContainer"],
+[class*="chatContent"] [class*="form"]:has([class*="replyBar"]) [class*="scrollableContainer"] {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+[class*="chatContent"] [class*="form"]:has([class*="stackedBars"]) [class*="stackedBars"],
+[class*="chatContent"] [class*="form"]:has([class*="attachedBars"]) [class*="attachedBars"],
+[class*="chatContent"] [class*="form"]:has([class*="replyBar"]) [class*="replyBar"] {
+    background: transparent !important;
+    border-bottom: none !important;
+}
+
 [class*="containerDefault"] [aria-label],
 [class*="member"] {
+    min-height: 34px !important;
+    box-sizing: border-box !important;
     border-radius: var(--radius-sm) !important;
 }
 
@@ -337,6 +427,21 @@ li[class*="replying"]:hover {
 [class*="containerDefault"]:hover {
     background: color-mix(in srgb, var(--item-surface-2) 72%, transparent) !important;
     border-radius: var(--radius-sm) !important;
+}
+
+div[class*="sidebarResizeHandle"] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#channels,
+div[id="channels"][class*="scroller"],
+[class*="sidebar"] div[id="channels"] {
+    border: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 div[class*="unreadBar"],
@@ -380,7 +485,7 @@ div[class*="unreadMentionsIndicatorBottom"] > div,
 button[class*="jumpToPresentBar"],
 div[class*="jumpToPresentBar"] {
     background: color-mix(in srgb, var(--item-surface-1) 82%, var(--item-unread) 18%) !important;
-    border: 1px solid color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+    border: none !important;
     color: var(--item-unread) !important;
 }
 
@@ -407,7 +512,7 @@ div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPill__908e2,
         color-mix(in srgb, var(--item-mention-glow-3) 45%, var(--item-surface-1)) 100%
     ) !important;
     color: var(--item-mention-text) !important;
-    border: 1px solid color-mix(in srgb, var(--item-accent) 45%, transparent) !important;
+    border: none !important;
     border-radius: 999px !important;
     box-shadow:
         0 0 0 1px color-mix(in srgb, var(--item-mention-glow-1) 35%, transparent),
@@ -475,6 +580,10 @@ button[class*="button"] {
 [class*="wrapper__44b0c"],
 [class*="userAvatar"] {
     border-radius: 999px !important;
+}
+
+div[class*="sidebar"] div[class*="scroller"] {
+    padding-bottom: calc(var(--custom-app-panels-height, 0px) + var(--eh-gap)) !important;
 }
 
 .theme-dark :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover,

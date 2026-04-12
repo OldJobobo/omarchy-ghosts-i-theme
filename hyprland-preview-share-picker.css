@@ -12,6 +12,7 @@
 @define-color background #1b0f0c;
 @define-color accent #c19359;
 @define-color muted #5a4432;
+@define-color edge #7a6a5f;
 @define-color card_bg #4e3024;
 @define-color text_dark #1b0f0c;
 @define-color accent_hover #d9b67e;
@@ -28,7 +29,7 @@
 
 .window {
   background: alpha(@background, 0.95);
-  border: solid 2px @accent;
+  border: solid 2px @edge;
   margin: 4px;
   padding: 18px;
 }
@@ -67,7 +68,7 @@ tabs > tab:focus > .tab-label {
 flowboxchild > .card, button > .card {
     transition: all 0.2s ease;
     border: solid 2px transparent;
-    border-color: @background;
+    border-color: @edge;
     border-radius: 5px;
     background-color: @card_bg;
     padding: 5px;

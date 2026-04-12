@@ -12,9 +12,9 @@ accent = "#c19359"
 cursor = "#d8c8b4"
 foreground = "#d8c8b4"
 background = "#1b0f0c"
-selection_foreground = "#e6d7c3"
+selection_foreground = "#d2aa73"
 selection_background = "#251713"
-active_border_color = "#c19359"
+active_border_color = "#d2aa73"
 
 
 color0 = "#1b0f0c"
