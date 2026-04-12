@@ -55,27 +55,27 @@
 
 /* Adwaita Color Overrides */
 @define-color accent_bg_color #c19359;
-@define-color accent_fg_color @color15;
+@define-color accent_fg_color @background;
 @define-color accent_color #c19359;
 
 @define-color window_bg_color @background;
 @define-color window_fg_color @foreground;
 
 /* Sidebar background and content */
-@define-color view_bg_color @background;
+@define-color view_bg_color @color0;
 @define-color view_fg_color @foreground;
-@define-color sidebar_bg_color @background;
+@define-color sidebar_bg_color @color0;
 @define-color sidebar_fg_color @foreground;
-@define-color sidebar_backdrop_color @background;
-@define-color sidebar_shade_color @background;
+@define-color sidebar_backdrop_color @color0;
+@define-color sidebar_shade_color @color0;
 
-@define-color headerbar_bg_color alpha(@foreground, 0.05);
+@define-color headerbar_bg_color @background;
 @define-color headerbar_fg_color @foreground;
 @define-color headerbar_backdrop_color @background;
 @define-color headerbar_shade_color @background;
-@define-color headerbar_border_color alpha(@color12, 0.42);
+@define-color headerbar_border_color @color12;
 
-@define-color card_bg_color alpha(@foreground, 0.03);
+@define-color card_bg_color @background;
 @define-color card_fg_color @foreground;
 @define-color card_shade_color @background;
 
@@ -92,16 +92,16 @@
 @define-color dialog_fg_color @foreground;
 
 @define-color destructive_bg_color @color1;
-@define-color destructive_fg_color @color15;
+@define-color destructive_fg_color @background;
 
 @define-color success_bg_color @color2;
-@define-color success_fg_color @color15;
+@define-color success_fg_color @background;
 
 @define-color warning_bg_color @color3;
-@define-color warning_fg_color @color15;
+@define-color warning_fg_color @background;
 
 @define-color error_bg_color @color1;
-@define-color error_fg_color @color15;
+@define-color error_fg_color @background;
 
 @define-color borders alpha(@color12, 0.42);
 
