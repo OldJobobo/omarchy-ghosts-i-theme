@@ -1,0 +1,513 @@
+/*  ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░ ░▒▓███████▓▒░▒▓████████▓▒░▒▓███████▓▒░      ░▒▓█▓▒░  */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░  ░▒▓█▓▒░             ░▒▓█▓▒░  */
+/* ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░  ░▒▓█▓▒░             ░▒▓█▓▒░  */
+/* ░▒▓█▓▒▒▓███▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░   ░▒▓█▓▒░   ░▒▓██████▓▒░       ░▒▓█▓▒░  */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░  ░▒▓█▓▒░         ░▒▓█▓▒░      ░▒▓█▓▒░  */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░  ░▒▓█▓▒░         ░▒▓█▓▒░      ░▒▓█▓▒░  */
+/*  ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓███████▓▒░   ░▒▓█▓▒░  ░▒▓███████▓▒░       ░▒▓█▓▒░  */
+/*                                                                                              */
+/*                                                                                              */
+
+/**
+* @name Ghosts I
+* @author @oldjobobo
+* @version 0.2.0
+* @description Standalone Omarchy Vencord theme for Ghosts I
+**/
+
+:root {
+    --color00: #1b0f0c;
+    --color01: #8f2f2f;
+    --color02: #466b61;
+    --color03: #c19359;
+    --color04: #5a4432;
+    --color05: #8d623b;
+    --color06: #ab7f53;
+    --color07: #d8c8b4;
+    --color08: #4e3024;
+    --color09: #b44949;
+    --color10: #61897d;
+    --color11: #d9b67e;
+    --color12: #7a6a5f;
+    --color13: #b9835c;
+    --color14: #d2aa73;
+    --color15: #e6d7c3;
+
+    --item-surface-0: #1b0f0c;
+    --item-surface-1: #1b0f0c;
+    --item-surface-2: #4e3024;
+    --item-surface-3: #5a4432;
+    --item-surface-4: #7a6a5f;
+
+    --item-text: var(--color07);
+    --item-text-muted: #ab7f53;
+    --item-text-contrast: var(--color15);
+    --item-text-inverse: var(--color00);
+
+    --item-accent: var(--color03);
+    --item-accent-strong: var(--color11);
+    --item-danger: var(--color09);
+    --item-success: var(--color10);
+    --item-warning: var(--color11);
+    --item-highlight: var(--color03);
+    --item-unread: var(--color10);
+
+    --item-mention-glow-1: var(--color03);
+    --item-mention-glow-2: var(--color11);
+    --item-mention-glow-3: var(--color10);
+
+    --item-message-text: var(--item-text);
+    --item-channel-name: var(--item-text-muted);
+    --item-channel-name-unread: var(--item-text);
+    --item-channel-name-selected: var(--item-accent);
+    --item-username: var(--item-accent);
+    --item-mention-foreground: var(--item-text-contrast);
+    --item-mention-text: var(--item-text-contrast);
+
+    --item-border: color-mix(in srgb, var(--item-surface-3) 60%, transparent);
+    --item-accent-dim: color-mix(in srgb, var(--item-accent) 30%, var(--item-surface-1));
+    --radius-sm: 0px;
+    --radius-md: 0px;
+    --radius-lg: 0px;
+
+    --eh-gap: 12px;
+    --eh-letter-spacing: 0.35px;
+    --font-primary: "gg sans", sans-serif;
+    --font-display: "gg sans", sans-serif;
+}
+
+.theme-dark,
+.theme-darker,
+.theme-midnight,
+.visual-refresh {
+    --background-primary: var(--item-surface-1) !important;
+    --background-secondary: var(--item-surface-0) !important;
+    --background-secondary-alt: var(--item-surface-1) !important;
+    --background-tertiary: var(--item-surface-0) !important;
+    --background-accent: var(--item-surface-2) !important;
+    --background-floating: var(--item-surface-2) !important;
+
+    --background-base-lowest: var(--item-surface-0) !important;
+    --background-base-lower: var(--item-surface-0) !important;
+    --background-base-low: var(--item-surface-1) !important;
+    --background-base-tertiary: var(--item-surface-0) !important;
+
+    --background-surface-high: var(--item-surface-2) !important;
+    --background-surface-higher: var(--item-surface-2) !important;
+    --background-surface-highest: var(--item-surface-3) !important;
+    --bg-surface-raised: var(--item-surface-2) !important;
+    --bg-surface-overlay: var(--item-surface-1) !important;
+    --bg-base-secondary: var(--item-surface-0) !important;
+    --bg-base-tertiary: var(--item-surface-0) !important;
+    --bg-overlay-2: var(--item-surface-2) !important;
+    --bg-overlay-3: var(--item-surface-3) !important;
+
+    --background-modifier-accent: color-mix(in srgb, var(--item-surface-2) 70%, transparent) !important;
+    --background-modifier-hover: color-mix(in srgb, var(--item-surface-2) 82%, transparent) !important;
+    --background-modifier-active: color-mix(in srgb, var(--item-surface-3) 82%, transparent) !important;
+    --background-modifier-selected: color-mix(in srgb, var(--item-surface-3) 92%, transparent) !important;
+    --background-mentioned: linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--item-accent) 18%, var(--item-surface-1)) 0%,
+        var(--item-surface-1) 100%
+    ) !important;
+    --background-mentioned-hover: linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--item-accent) 28%, var(--item-surface-1)) 0%,
+        var(--item-surface-1) 100%
+    ) !important;
+    --mention-background: linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--item-accent) 22%, var(--item-surface-1)) 0%,
+        var(--item-surface-1) 100%
+    ) !important;
+    --mention-foreground: var(--item-mention-foreground) !important;
+
+    --text-normal: var(--item-text) !important;
+    --text-muted: var(--item-text-muted) !important;
+    --text-primary: var(--item-text) !important;
+    --text-secondary: color-mix(in srgb, var(--item-text) 72%, var(--item-text-muted)) !important;
+    --header-primary: var(--item-text-contrast) !important;
+    --header-secondary: color-mix(in srgb, var(--item-text) 68%, var(--item-text-muted)) !important;
+    --interactive-normal: var(--item-text) !important;
+    --interactive-hover: var(--item-text-contrast) !important;
+    --interactive-active: var(--item-accent-strong) !important;
+    --interactive-muted: var(--item-text-muted) !important;
+
+    --channels-default: var(--item-channel-name) !important;
+    --channels-default-muted: color-mix(in srgb, var(--item-channel-name) 56%, transparent) !important;
+    --channels-default-unread: var(--item-channel-name-unread) !important;
+
+    --brand-500: var(--item-accent) !important;
+    --brand-560: color-mix(in srgb, var(--item-accent) 24%, var(--item-surface-1)) !important;
+    --text-link: var(--item-accent) !important;
+    --channel-icon: var(--item-accent-dim) !important;
+    --focus-primary: var(--item-accent) !important;
+    --input-border-focus: var(--item-accent) !important;
+
+    --button-filled-brand-background: color-mix(in srgb, var(--item-accent) 72%, var(--item-surface-1)) !important;
+    --button-filled-brand-background-hover: color-mix(in srgb, var(--item-accent) 82%, var(--item-surface-1)) !important;
+    --button-filled-brand-text: var(--item-text-inverse) !important;
+
+    --button-positive-background: color-mix(in srgb, var(--item-success) 72%, var(--item-surface-1)) !important;
+    --button-positive-background-hover: color-mix(in srgb, var(--item-success) 84%, var(--item-surface-1)) !important;
+    --button-positive-text: var(--item-text-inverse) !important;
+
+    --button-secondary-background: var(--item-surface-3) !important;
+    --button-secondary-background-hover: var(--item-surface-2) !important;
+    --button-secondary-text: var(--item-text) !important;
+
+    --button-danger-background: var(--item-danger) !important;
+    --button-danger-background-hover: color-mix(in srgb, var(--item-danger) 82%, var(--item-text-contrast)) !important;
+    --button-danger-text: var(--item-text-inverse) !important;
+
+    --status-positive: var(--item-success) !important;
+    --status-warning: var(--item-warning) !important;
+    --status-danger: var(--item-danger) !important;
+}
+
+body {
+    letter-spacing: var(--eh-letter-spacing);
+    background: var(--item-surface-0);
+}
+
+[class*="username"] {
+    color: var(--item-username) !important;
+}
+
+.theme-dark :is([class*="messageContent"], [class*="markup"]),
+.theme-darker :is([class*="messageContent"], [class*="markup"]),
+.theme-midnight :is([class*="messageContent"], [class*="markup"]),
+.visual-refresh :is([class*="messageContent"], [class*="markup"]) {
+    color: var(--item-message-text) !important;
+}
+
+a[data-list-item-id^="channels___"][aria-selected="true"] {
+    background-color: var(--background-modifier-selected) !important;
+    box-shadow:
+        inset 3px 0 0 0 var(--item-accent),
+        inset 0 0 0 1px color-mix(in srgb, var(--item-accent) 18%, transparent) !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+a[data-list-item-id^="channels___"]:hover {
+    background-color: var(--background-modifier-hover) !important;
+    box-shadow: inset 2px 0 0 0 color-mix(in srgb, var(--item-accent) 48%, transparent) !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+a[data-list-item-id^="channels___"] [class*="link"],
+li[class*="containerDefault"] [class*="link"] {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+a[data-list-item-id^="channels___"] svg,
+a[data-list-item-id^="channels___"] svg path {
+    fill: var(--item-accent-dim) !important;
+    color: var(--item-accent-dim) !important;
+}
+
+a[data-list-item-id^="channels___"][class*="modeUnread"] svg,
+a[data-list-item-id^="channels___"][class*="modeUnread"] svg path,
+[class*="modeUnread"] [class*="icon__"],
+[class*="modeUnread"] [class*="icon__"] path {
+    fill: var(--item-accent) !important;
+    color: var(--item-accent) !important;
+}
+
+a[data-list-item-id^="channels___"]:not([class*="modeUnread"]):not([aria-selected="true"]) [class*="name"] *,
+li[class*="containerDefault"]:not([class*="modeUnread"]):not([class*="selected"]):not([class*="modeSelected"]) [class*="name"] *,
+#channels [class*="name__"] {
+    color: var(--item-channel-name) !important;
+}
+
+a[data-list-item-id^="channels___"][class*="modeUnread"] [class*="name"] *,
+li[class*="containerDefault"][class*="modeUnread"] [class*="name"] *,
+#channels [class*="modeUnread"] [class*="name__"] {
+    color: var(--item-channel-name-unread) !important;
+}
+
+#channels [class*="modeSelected"] [class*="name__"] {
+    color: var(--item-channel-name-selected) !important;
+}
+
+[class*="channelTextArea"]:focus-within {
+    box-shadow: 0 0 0 1px var(--item-accent) inset !important;
+    border-color: var(--item-accent) !important;
+}
+
+[class*="channelTextArea"]:focus-within [class*="scrollableContainer"] {
+    box-shadow: none !important;
+    border-color: inherit !important;
+}
+
+[class*="textAreaForPostCreation"] {
+    padding: 8px 10px !important;
+    box-sizing: border-box !important;
+}
+
+[class*="container__94439"] {
+    margin-left: 8px !important;
+}
+
+div[class*="mentioned"],
+li[class*="mentioned"] {
+    background: var(--background-mentioned) !important;
+    box-shadow: none !important;
+    border-left: 3px solid var(--item-accent) !important;
+    border-radius: var(--radius-sm) !important;
+    position: relative;
+}
+
+div[class*="mentioned"]:hover,
+li[class*="mentioned"]:hover {
+    background: var(--background-mentioned-hover) !important;
+}
+
+div[class*="mentioned"]::before,
+li[class*="mentioned"]::before,
+div[class*="replying"]::before,
+li[class*="replying"]::before {
+    content: none !important;
+}
+
+div[class*="replying"],
+li[class*="replying"] {
+    background: color-mix(in srgb, var(--item-warning) 16%, var(--item-surface-1)) !important;
+    box-shadow: none !important;
+    border-left: 3px solid var(--item-warning) !important;
+    border-radius: var(--radius-sm) !important;
+    position: relative;
+}
+
+div[class*="replying"]:hover,
+li[class*="replying"]:hover {
+    background: color-mix(in srgb, var(--item-warning) 22%, var(--item-surface-1)) !important;
+}
+
+[id^="chat-messages-"] [class*="messageListItem"]:hover,
+[id^="chat-messages-"] [class*="messageListItem"]:hover > [class*="message"],
+[id^="chat-messages-"] [class*="messageListItem"]:hover [class*="contents"] {
+    background: color-mix(in srgb, var(--item-surface-4) 54%, transparent) !important;
+    border-radius: var(--radius-md) !important;
+}
+
+[class*="sidebar"],
+[class*="chatContent"],
+[class*="contentRegion"],
+[class*="membersWrap"] {
+    background: var(--item-surface-1) !important;
+    border-radius: var(--radius-lg) !important;
+}
+
+[class*="sidebar"] {
+    border-right: 1px solid color-mix(in srgb, var(--item-surface-3) 38%, transparent) !important;
+}
+
+[class*="membersWrap"],
+[class*="panels"] {
+    background: var(--item-surface-1) !important;
+    border-left: 1px solid color-mix(in srgb, var(--item-surface-3) 38%, transparent) !important;
+    border-radius: var(--radius-lg) !important;
+}
+
+[class*="chatContent"] [class*="scrollableContainer"],
+[class*="container"] [class*="searchBar"] {
+    background: var(--item-surface-2) !important;
+    border: 1px solid color-mix(in srgb, var(--item-surface-3) 42%, transparent) !important;
+    box-shadow: none !important;
+    border-radius: var(--radius-md) !important;
+}
+
+[class*="chatContent"] [class*="form"],
+[class*="chatContent"] [class*="channelTextArea"] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+[class*="containerDefault"] [aria-label],
+[class*="member"] {
+    border-radius: var(--radius-sm) !important;
+}
+
+[class*="member"]:hover,
+[class*="containerDefault"]:hover {
+    background: color-mix(in srgb, var(--item-surface-2) 72%, transparent) !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+div[class*="unreadBar"],
+span[class*="unreadBar"],
+div[class*="unreadPill"],
+span[class*="unreadPill"],
+div[class*="numberBadge"],
+span[class*="numberBadge"],
+div[class*="textBadge"],
+span[class*="textBadge"],
+div.unread__2ea32.unreadImportant__2ea32 {
+    background-color: var(--item-unread) !important;
+    color: var(--item-surface-1) !important;
+}
+
+div#---new-messages-bar.divider__5126c,
+div#---new-messages-bar.divider__908e2.isUnread__908e2 {
+    --divider-color: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+}
+
+div#---new-messages-bar.divider__5126c.hasContent__5126c {
+    background:
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            color-mix(in srgb, var(--item-unread) 35%, transparent) 20%,
+            color-mix(in srgb, var(--item-unread) 35%, transparent) 70%,
+            transparent 84%,
+            transparent 100%
+        ) !important;
+    border-radius: var(--radius-md) !important;
+    padding: 4px 54px 4px 10px !important;
+    margin: 14px 0 6px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .content__908e2,
+div[class*="unreadMentionsIndicatorBottom"] > div,
+button[class*="jumpToPresentBar"],
+div[class*="jumpToPresentBar"] {
+    background: color-mix(in srgb, var(--item-surface-1) 82%, var(--item-unread) 18%) !important;
+    border: 1px solid color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+    color: var(--item-unread) !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .content__908e2 {
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    font-weight: 600 !important;
+    padding: 4px 10px !important;
+    border-radius: 999px !important;
+    box-shadow:
+        0 0 0 1px color-mix(in srgb, var(--item-unread) 25%, transparent),
+        0 6px 18px rgba(0, 0, 0, 0.25) !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPill__908e2,
+.theme-dark :is([class*="messageContent"], [class*="markup"]) [class*="mention"],
+.theme-darker :is([class*="messageContent"], [class*="markup"]) [class*="mention"],
+.theme-midnight :is([class*="messageContent"], [class*="markup"]) [class*="mention"],
+.visual-refresh :is([class*="messageContent"], [class*="markup"]) [class*="mention"] {
+    background-image: linear-gradient(
+        120deg,
+        color-mix(in srgb, var(--item-mention-glow-1) 55%, var(--item-surface-1)) 0%,
+        color-mix(in srgb, var(--item-mention-glow-2) 55%, var(--item-surface-1)) 50%,
+        color-mix(in srgb, var(--item-mention-glow-3) 45%, var(--item-surface-1)) 100%
+    ) !important;
+    color: var(--item-mention-text) !important;
+    border: 1px solid color-mix(in srgb, var(--item-accent) 45%, transparent) !important;
+    border-radius: 999px !important;
+    box-shadow:
+        0 0 0 1px color-mix(in srgb, var(--item-mention-glow-1) 35%, transparent),
+        0 0 12px color-mix(in srgb, var(--item-mention-glow-1) 25%, transparent) !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPill__908e2 {
+    padding: 0 8px !important;
+    height: 16px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    font-size: 10px !important;
+    transform: translateY(1px) !important;
+    box-shadow:
+        0 0 0 1px color-mix(in srgb, var(--item-mention-glow-1) 35%, transparent),
+        0 0 12px color-mix(in srgb, var(--item-mention-glow-1) 25%, transparent),
+        0 6px 14px rgba(0, 0, 0, 0.25) !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCapStroke__908e2 {
+    stroke: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCap__908e2,
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCap__908e2 path {
+    fill: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+    color: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+    stroke: color-mix(in srgb, var(--item-unread) 55%, transparent) !important;
+}
+
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCap__908e2,
+div#---new-messages-bar.divider__908e2.isUnread__908e2 .unreadPillCap__908e2 * {
+    display: none !important;
+}
+
+span[class*="mention"],
+span[class*="mention"] span,
+span[class*="live"],
+span[class*="live"] span,
+div[class*="activity"] span[class*="dot"] {
+    background-color: var(--item-unread) !important;
+    color: var(--item-surface-1) !important;
+}
+
+.theme-dark :is([class*="messageContent"], [class*="markup"]) [class*="mention"],
+.theme-darker :is([class*="messageContent"], [class*="markup"]) [class*="mention"],
+.theme-midnight :is([class*="messageContent"], [class*="markup"]) [class*="mention"],
+.visual-refresh :is([class*="messageContent"], [class*="markup"]) [class*="mention"] {
+    display: inline-flex !important;
+    align-items: center !important;
+    line-height: 1.4 !important;
+    padding: 0.12em 0.55em !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px !important;
+    vertical-align: baseline !important;
+    text-shadow: none !important;
+}
+
+[class*="button"],
+button[class*="button"] {
+    border-radius: var(--radius-md) !important;
+}
+
+[class*="avatar"],
+[class*="wrapper__44b0c"],
+[class*="userAvatar"] {
+    border-radius: 999px !important;
+}
+
+.theme-dark :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover,
+.theme-darker :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover,
+.theme-midnight :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover,
+.visual-refresh :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover {
+    background-image: linear-gradient(
+        120deg,
+        color-mix(in srgb, var(--item-mention-glow-1) 70%, var(--item-surface-1)) 0%,
+        color-mix(in srgb, var(--item-mention-glow-2) 70%, var(--item-surface-1)) 50%,
+        color-mix(in srgb, var(--item-mention-glow-3) 60%, var(--item-surface-1)) 100%
+    ) !important;
+    border-color: color-mix(in srgb, var(--item-accent) 62%, transparent) !important;
+    box-shadow:
+        0 0 0 1px color-mix(in srgb, var(--item-mention-glow-1) 55%, transparent),
+        0 0 16px color-mix(in srgb, var(--item-mention-glow-1) 45%, transparent) !important;
+}
+
+/*  ░▒▓██████▓▒░░▒▓█▓▒░      ░▒▓███████▓▒░                                          */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░                                         */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░                                         */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░                                         */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░                                         */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░                                         */
+/*  ░▒▓██████▓▒░░▒▓████████▓▒░▒▓███████▓▒░                                          */
+/*                                                                                  */
+/*                                                                                  */
+/*        ░▒▓█▓▒░░▒▓██████▓▒░░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░ ░▒▓██████▓▒░   */
+/*        ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  */
+/*        ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  */
+/*        ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░  */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  */
+/* ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░  */
+/*  ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░ ░▒▓██████▓▒░   */
+/*                                                                                  */
+/*                                                                                  */

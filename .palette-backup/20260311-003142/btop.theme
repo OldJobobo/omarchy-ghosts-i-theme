@@ -1,0 +1,110 @@
+#Btop monokai pro ristretto theme
+#Reconfigured from monokai theme
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#1f0605"
+
+
+# Main text color
+theme[main_fg]="#e4edc8"
+
+
+# Title color for boxes
+theme[title]="#d18b47"
+
+
+
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#8b4f3f"
+
+
+
+
+# Background color of selected item in processes box
+theme[selected_bg]="#391808"
+
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#e4edc8"
+
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#391808"
+
+
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#d18b47"
+
+
+
+
+# Cpu box outline color
+theme[cpu_box]="#4d7a63"
+
+
+
+
+# Memory/disks box outline color
+theme[mem_box]="#4d7a63"
+
+
+
+
+# Net up/down box outline color
+theme[net_box]="#4d7a63"
+
+
+
+
+# Processes box outline color
+theme[proc_box]="#4d7a63"
+
+
+
+
+# Box divider line and small boxes line color
+theme[div_line]="#391808"
+
+
+
+# Temperature graph colors
+theme[temp_start]="#68a05f"
+theme[temp_mid]="#b9924a"
+theme[temp_end]="#9d1a19"
+
+# CPU graph colors
+theme[cpu_start]="#68a05f"
+theme[cpu_mid]="#b9924a"
+theme[cpu_end]="#9d1a19"
+
+# Mem/Disk free meter
+theme[free_start]="#5a4432"
+theme[free_mid]="#68a05f"
+theme[free_end]="#a6cba1"
+
+# Mem/Disk cached meter
+theme[cached_start]="#5a4432"
+theme[cached_mid]="#a8ccc8"
+theme[cached_end]="#e1efed"
+
+# Mem/Disk available meter
+theme[available_start]="#5a4432"
+theme[available_mid]="#b9924a"
+theme[available_end]="#e4c07a"
+
+# Mem/Disk used meter
+theme[used_start]="#5a4432"
+theme[used_mid]="#b9924a"
+theme[used_end]="#ed5c5b"
+
+# Download graph colors
+theme[download_start]="#391808"
+theme[download_mid]="#8d7763"
+theme[download_end]="#cbb79b"
+
+# Upload graph colors
+theme[upload_start]="#391808"
+theme[upload_mid]="#b9924a"
+theme[upload_end]="#e4c07a"

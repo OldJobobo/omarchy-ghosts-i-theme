@@ -1,0 +1,67 @@
+[window]
+opacity = 0.888
+
+[colors]
+
+[colors.normal]
+black   = "#1f0605"
+
+red = "#9d1a19"
+
+green = "#5b8a63"
+
+
+yellow = "#a95a32"
+
+
+blue = "#7a4a36"
+
+
+magenta = "#c9834a"
+
+
+cyan = "#8f6a4f"
+
+
+white = "#e4edc8"
+
+
+[colors.bright]
+black = "#391808"
+
+red     = "#ed5c5b"
+
+green   = "#7fa287"
+
+
+yellow  = "#d79a5d"
+
+
+blue    = "#a96d4e"
+
+
+magenta = "#e0a56e"
+
+
+cyan    = "#c7a889"
+
+
+white   = "#ffffff"
+
+
+[colors.cursor]
+cursor = '#e4edc8'
+
+text = '#1f0605'
+
+[colors.primary]
+background = '#1f0605'
+
+foreground = '#e4edc8'
+
+
+[colors.selection]
+background = '#341611'
+
+
+text = '#e4edc8'
