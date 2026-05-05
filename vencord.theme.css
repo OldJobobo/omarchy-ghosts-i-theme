@@ -197,30 +197,6 @@ a[data-list-item-id^="channels___"]:hover {
     border-radius: var(--radius-sm) !important;
 }
 
-a[data-list-item-id^="channels___"] [class*="link"],
-li[class*="containerDefault"] [class*="link"] {
-    background: transparent !important;
-    box-shadow: none !important;
-    min-height: var(--eh-row-height) !important;
-}
-
-a[data-list-item-id^="channels___"] [class*="linkTop"],
-a[data-list-item-id^="channels___"] [class*="content__"],
-a[data-list-item-id^="channels___"] [class*="name__"],
-a[data-list-item-id^="channels___"] [class*="iconContainer__"] {
-    display: flex !important;
-    align-items: center !important;
-}
-
-a[data-list-item-id^="channels___"] [class*="linkTop"],
-a[data-list-item-id^="channels___"] [class*="content__"] {
-    gap: 6px !important;
-}
-
-a[data-list-item-id^="channels___"] [class*="iconContainer__"] {
-    flex: 0 0 auto !important;
-}
-
 a[data-list-item-id^="channels___"] svg,
 a[data-list-item-id^="channels___"] svg path {
     fill: var(--item-accent-dim) !important;
@@ -416,19 +392,6 @@ li[class*="replying"]:hover {
     border-bottom: none !important;
 }
 
-[class*="containerDefault"] [aria-label],
-[class*="member"] {
-    min-height: 34px !important;
-    box-sizing: border-box !important;
-    border-radius: var(--radius-sm) !important;
-}
-
-[class*="member"]:hover,
-[class*="containerDefault"]:hover {
-    background: color-mix(in srgb, var(--item-surface-2) 72%, transparent) !important;
-    border-radius: var(--radius-sm) !important;
-}
-
 div[class*="sidebarResizeHandle"] {
     background: transparent !important;
     border: none !important;
@@ -580,10 +543,6 @@ button[class*="button"] {
 [class*="wrapper__44b0c"],
 [class*="userAvatar"] {
     border-radius: 999px !important;
-}
-
-div[class*="sidebar"] div[class*="scroller"] {
-    padding-bottom: calc(var(--custom-app-panels-height, 0px) + var(--eh-gap)) !important;
 }
 
 .theme-dark :is([class*="messageContent"], [class*="markup"]) [class*="mention"]:hover,
