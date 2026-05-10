@@ -27,16 +27,16 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-ghosts-i-theme.git
 
 <table>
   <tr>
-    <td><img src="backgrounds/34178.jpg" width="220" alt="Ghosts I wallpaper 34178"></td>
-    <td><img src="backgrounds/34367.jpg" width="220" alt="Ghosts I wallpaper 34367"></td>
-    <td><img src="backgrounds/34694.jpg" width="220" alt="Ghosts I wallpaper 34694"></td>
-    <td><img src="backgrounds/73177.jpg" width="220" alt="Ghosts I wallpaper 73177"></td>
+    <td><img src="backgrounds/01-ghosts-i-signal-lights.jpg" width="220" alt="Ghosts I wallpaper: Signal Lights" title="Signal Lights"><br>Signal Lights</td>
+    <td><img src="backgrounds/02-ghosts-i-patch-pins.jpg" width="220" alt="Ghosts I wallpaper: Patch Pins" title="Patch Pins"><br>Patch Pins</td>
+    <td><img src="backgrounds/03-ghosts-i-table-circuit.jpg" width="220" alt="Ghosts I wallpaper: Table Circuit" title="Table Circuit"><br>Table Circuit</td>
+    <td><img src="backgrounds/04-ghosts-i-green-tube.jpg" width="220" alt="Ghosts I wallpaper: Green Tube" title="Green Tube"><br>Green Tube</td>
   </tr>
   <tr>
-    <td><img src="backgrounds/73336.jpg" width="220" alt="Ghosts I wallpaper 73336"></td>
-    <td><img src="backgrounds/73345.jpg" width="220" alt="Ghosts I wallpaper 73345"></td>
-    <td><img src="backgrounds/73417.jpg" width="220" alt="Ghosts I wallpaper 73417"></td>
-    <td><img src="backgrounds/891206.jpg" width="220" alt="Ghosts I wallpaper 891206"></td>
+    <td><img src="backgrounds/05-ghosts-i-cable-nest.jpg" width="220" alt="Ghosts I wallpaper: Cable Nest" title="Cable Nest"><br>Cable Nest</td>
+    <td><img src="backgrounds/06-ghosts-i-red-distortion.jpg" width="220" alt="Ghosts I wallpaper: Red Distortion" title="Red Distortion"><br>Red Distortion</td>
+    <td><img src="backgrounds/07-ghosts-i-studio-rack.jpg" width="220" alt="Ghosts I wallpaper: Studio Rack" title="Studio Rack"><br>Studio Rack</td>
+    <td><img src="backgrounds/08-ghosts-i-machine-panel.jpg" width="220" alt="Ghosts I wallpaper: Machine Panel" title="Machine Panel"><br>Machine Panel</td>
   </tr>
 </table>
 
