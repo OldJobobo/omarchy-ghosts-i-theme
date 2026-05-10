@@ -27,16 +27,16 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-ghosts-i-theme.git
 
 <table>
   <tr>
-    <td><img src="backgrounds/01-ghosts-i-signal-lights.jpg" width="220" alt="Ghosts I wallpaper: Signal Lights" title="Signal Lights"><br>Signal Lights</td>
-    <td><img src="backgrounds/02-ghosts-i-patch-pins.jpg" width="220" alt="Ghosts I wallpaper: Patch Pins" title="Patch Pins"><br>Patch Pins</td>
-    <td><img src="backgrounds/03-ghosts-i-table-circuit.jpg" width="220" alt="Ghosts I wallpaper: Table Circuit" title="Table Circuit"><br>Table Circuit</td>
-    <td><img src="backgrounds/04-ghosts-i-green-tube.jpg" width="220" alt="Ghosts I wallpaper: Green Tube" title="Green Tube"><br>Green Tube</td>
+    <td><img src="backgrounds/01-signal-lights.jpg" width="220" alt="Ghosts I wallpaper: Signal Lights" title="Signal Lights"><br>Signal Lights</td>
+    <td><img src="backgrounds/02-patch-pins.jpg" width="220" alt="Ghosts I wallpaper: Patch Pins" title="Patch Pins"><br>Patch Pins</td>
+    <td><img src="backgrounds/03-table-circuit.jpg" width="220" alt="Ghosts I wallpaper: Table Circuit" title="Table Circuit"><br>Table Circuit</td>
+    <td><img src="backgrounds/04-green-tube.jpg" width="220" alt="Ghosts I wallpaper: Green Tube" title="Green Tube"><br>Green Tube</td>
   </tr>
   <tr>
-    <td><img src="backgrounds/05-ghosts-i-cable-nest.jpg" width="220" alt="Ghosts I wallpaper: Cable Nest" title="Cable Nest"><br>Cable Nest</td>
-    <td><img src="backgrounds/06-ghosts-i-red-distortion.jpg" width="220" alt="Ghosts I wallpaper: Red Distortion" title="Red Distortion"><br>Red Distortion</td>
-    <td><img src="backgrounds/07-ghosts-i-studio-rack.jpg" width="220" alt="Ghosts I wallpaper: Studio Rack" title="Studio Rack"><br>Studio Rack</td>
-    <td><img src="backgrounds/08-ghosts-i-machine-panel.jpg" width="220" alt="Ghosts I wallpaper: Machine Panel" title="Machine Panel"><br>Machine Panel</td>
+    <td><img src="backgrounds/05-cable-nest.jpg" width="220" alt="Ghosts I wallpaper: Cable Nest" title="Cable Nest"><br>Cable Nest</td>
+    <td><img src="backgrounds/06-red-distortion.jpg" width="220" alt="Ghosts I wallpaper: Red Distortion" title="Red Distortion"><br>Red Distortion</td>
+    <td><img src="backgrounds/07-studio-rack.jpg" width="220" alt="Ghosts I wallpaper: Studio Rack" title="Studio Rack"><br>Studio Rack</td>
+    <td><img src="backgrounds/08-machine-panel.jpg" width="220" alt="Ghosts I wallpaper: Machine Panel" title="Machine Panel"><br>Machine Panel</td>
   </tr>
 </table>
 
